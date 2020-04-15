@@ -5,7 +5,8 @@ package _03_high_low;
 
 import java.util.Random;
 
-import javax.swing.JOptionPane;
+import javax.swing.JOptio
+nPane;
 
 public class HighLowGame {
 
