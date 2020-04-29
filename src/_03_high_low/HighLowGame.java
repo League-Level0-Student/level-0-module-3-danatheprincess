@@ -5,45 +5,45 @@ package _03_high_low;
 
 import java.util.Random;
 
-import javax.swing.JOptio
-nPane;
+import javax.swing.JOptionPane;
+
+import javax.swing.JOptionPane;
 
 public class HighLowGame {
 
 	public static void main(String[] args) {
-		// 3. Change this line to give you a random number between 1 - 100. 
-		int random = new Random().nextInt(100)+1;
-		
+		// 3. Change this line to give you a random number between 1 - 100.
+		int random = new Random().nextInt(100) + 1;
+
 		// 2. Print out the random variable above
 		System.out.println(random);
-		
+
 		// 11. Repeat steps 1 to 10 ten times
-		for(int i=0;i<11;i++) {
-			// 1. Ask the user for a guess using a pop-up window, and save their response 
-String number=JOptionPane.showInputDialog("choose a number");
+		for (int i = 0; i < 11; i++) {
+			// 1. Ask the user for a guess using a pop-up window, and save their response
+			String number = JOptionPane.showInputDialog("choose a number");
 			// 4. Convert the users’ answer to an int (Integer.parseInt(string))
-			int num=Integer.parseInt(number);
+			int num = Integer.parseInt(number);
 			// 5. if the guess is correct
-			if(num==random) {
-			JOptionPane.showMessageDialog(null,"you win!");
-	}
-				// 6. Win
-				// 12. Use "System.exit(0);" to quit the game if the user guessed the right answer.
-			// 7. if the guess is high
-			if(num>random) {
-	JOptionPane.showMessageDialog(null,"It is too high!");
-}
-				// 8. Tell them it's too high
-			// 9. if the guess is low
-			if(num<random) {
-				JOptionPane.showMessageDialog(null,"It is too low");
+			if (num == random) {
+				JOptionPane.showMessageDialog(null, "you win!");
 			}
-				// 10. Tell them it's too low
+			// 6. Win
+			// 12. Use "System.exit(0);" to quit the game if the user guessed the right
+			// answer.
+			// 7. if the guess is high
+			if (num > random) {
+				JOptionPane.showMessageDialog(null, "It is too high!");
+			}
+			// 8. Tell them it's too high
+			// 9. if the guess is low
+			if (num < random) {
+				JOptionPane.showMessageDialog(null, "It is too low you lose!");
+			}
+			// 10. Tell them it's too low
 		}
 		// 13. Tell them they lose
-		
+
 	}
 
 }
-
-
