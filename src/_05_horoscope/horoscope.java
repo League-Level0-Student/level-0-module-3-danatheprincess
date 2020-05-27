@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class horoscope {
 	public static void main(String arg[]) {
 
-		String sign = JOptionPane.showInputDialog("What is your zodiac sign");
+		String sign = JOptionPane.showInputDialog("What is your zodiac sign?");
 		if (sign.equals("Libra")) {
 			JOptionPane.showMessageDialog(null,
 					"you have a sense of fair play and become completely upset when things are fair and unjust");
@@ -17,7 +17,7 @@ public class horoscope {
 		}else if(sign.equals("Pisces")){
 			JOptionPane.showMessageDialog(null,"you are empathetic people, often feeling badly for someone whose life is not going well.");
 		}else if(sign.equals("Aries")){
-			JOptionPane.showMessageDialog(null," you are highly energetic, and has no problem working long hours on a single project.");
+			JOptionPane.showMessageDialog(null," you are highly energetic, and have no problem working long hours on a single project.");
 		}else if(sign.equals("Taurus")){
 			JOptionPane.showMessageDialog(null,"you are deliberate a thinker and when making decisions you usually make the right one. ");
 		}else if(sign.equals("Scorpio")){
@@ -28,9 +28,13 @@ public class horoscope {
 			JOptionPane.showMessageDialog(null,"you are highly intelligent and love to be around intelligent people.");
 		}else if(sign.equals("Capricorn")){
 			JOptionPane.showMessageDialog(null,"you are the superheroe when It comes to making realistic, logical decisions.");
+		}else if(sign.equals("Leo")){
+			JOptionPane.showMessageDialog(null,"you tend to be honest and a decent person, opting to do the right thing regardless of the situation. ");
+		}else if(sign.equals("Aquarius")) {
+			JOptionPane.showMessageDialog(null, " you are among the friendliest of the signs, making friends everywhere. ");
 		}
-		else{
+		else {
+			JOptionPane.showMessageDialog(null, " That is not a star sign");
 		}
-			
 	}
 }
