@@ -6,7 +6,7 @@ Use Modulo to make the colors alternate
 */
   int x=30;
   int y = 30;
-  for(int b=0;b<6;b++){
+  for(int b=0;b<36;b++){
     if(b%2==0){
       fill(#050505);
     } else{
@@ -19,6 +19,7 @@ Use Modulo to make the colors alternate
   y = y + 10;
   
   }
+  drawBeeFace(x,y);
   
 
 
@@ -64,4 +65,6 @@ void setup() {
      size(500, 500);
      background(160, 160, 160);
       drawFlower(350, 100);
+ 
+      
 }
